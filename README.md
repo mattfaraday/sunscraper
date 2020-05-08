@@ -42,7 +42,9 @@ At this point data should start being written to your influxDB and you can now c
 and dashboard to visualise the data if required. Or you can now query your influxdb and do something with
 the data.
 
-
+===
+Here is an example of what you can do in graphana to view the collected data
+![graphana](graphed.png)
 ===
 
 Notes: 
