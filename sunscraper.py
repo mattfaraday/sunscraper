@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Hacked together by matt <at> faraday.at 
+# This script requires an immersun hardware unit, with internet bridge
+# and an account setup at live.myimmersun.com 
+
 import requests
 from datetime import datetime
 from requests.auth import HTTPDigestAuth
@@ -34,7 +38,7 @@ consumption_value = import_power_item[2].contents[0]
 divert_value = import_power_item[3].contents[0]
 json_body = [
         {
-            "measurement": "immsersun_stats",
+            "measurement": "immersun_stats",
             "tags": {
                 "host": pvname,
                 "region": pvloc
