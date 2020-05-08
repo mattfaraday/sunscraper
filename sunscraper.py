@@ -35,7 +35,12 @@ client = InfluxDBClient(dbhost, dbport)
 import_value = import_power_item[0].contents[0]
 production_value = import_power_item[1].contents[0]
 consumption_value = import_power_item[2].contents[0]
-divert_value = import_power_item[3].contents[0]
+
+if "Hot" not in import_power_item[3].contents[0]:
+     divert_value = import_power_item[3].contents[0]
+ else:
+     divert_value = 0
+
 json_body = [
         {
             "measurement": "immersun_stats",
