@@ -43,8 +43,10 @@ and dashboard to visualise the data if required. Or you can now query your influ
 the data.
 
 ===
+
 Here is an example of what you can do in graphana to view the collected data
 ![graphana](graphed.png)
+
 ===
 
 Notes: 
