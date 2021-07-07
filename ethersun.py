@@ -16,6 +16,9 @@ username = "my@email.com"
 password = "password"
 trexIP = "192.168.0.3"
 trexPORT = "4067"
+
+## This is the amount of power your miner consumes when mining ..."
+miningpower = 150
 ############################
 
 
@@ -37,7 +40,7 @@ pproduction = int(str(production_value).rstrip('W'))
 pconsumption = int(str(consumption_value).rstrip('W'))
 pfree = pproduction - pconsumption
 
-if (pfree > 150):
+if (pfree > miningpower):
    response = requests.get("http://"+trexIP+":"+trexPORT+"/control?pause=false")
 else:
    response = requests.get("http://"+trexIP+":"+trexPORT+"/control?pause=true")
