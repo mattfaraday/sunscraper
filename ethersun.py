@@ -14,7 +14,8 @@ from bs4 import BeautifulSoup
 ####### CHANGE THESE #######
 username = "my@email.com"
 password = "password"
-trexIP = 192.168.0.3
+trexIP = "192.168.0.3"
+trexPORT = "4067"
 ############################
 
 
@@ -37,6 +38,6 @@ pconsumption = int(str(consumption_value).rstrip('W'))
 pfree = pproduction - pconsumption
 
 if (pfree > 150):
-   response = requests.get("http://10.0.0.30:4067/control?pause=false")
+   response = requests.get("http://"+trexIP+":"+trexPORT+"/control?pause=false")
 else:
-   response = requests.get("http://10.0.0.30:4067/control?pause=true")
+   response = requests.get("http://"+trexIP+":"+trexPORT+"/control?pause=true")
