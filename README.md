@@ -1,6 +1,20 @@
 # sunscraper
 
+
 ===
+UPDATE: I have now added a second script called ethersun, this script controls a t-rex ethereum miner on a remote computer 
+The principle is to run the script in a cron, and it will mine ethereum when there is free (excess) power reported. 
+It can be adapted to use on other miners that have an API. 
+
+To use it with t-rex you should start the miner (it can be paused) and set it to listen on either all IPs or a non-loopback IP 
+The default is to start the API on 127.0.0.1 which wont work so add the flag --api-bind-http 0.0.0.0:4067 
+
+===
+
+
+The original project: 
+
+
 This project scrapes data from the live.myimmersun.com website which owners of immersun units 
 can use to monitor solar power generation/power consumption/power diverted to water heater. 
 
