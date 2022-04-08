@@ -1,6 +1,14 @@
 # sunscraper
 
 
+## UNMAINTAINED!
+
+Since my brige / online service basically keep breaking and I keep having to log tickets, I've given up. 
+I now log my data using open hardware I can control myself, so I am archiving this git repo and no further updates will happen.
+
+
+
+
 ===
 UPDATE: I have now added a second script called ethersun, this script controls a t-rex ethereum miner on a remote computer 
 The principle is to run the script in a cron, and it will mine ethereum when there is free (excess) power reported. 
