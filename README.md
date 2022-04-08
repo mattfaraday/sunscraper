@@ -1,7 +1,7 @@
 # sunscraper
 
 
-## UNMAINTAINED!
+## 2022- UNMAINTAINED!
 
 Since my brige / online service basically keep breaking and I keep having to log tickets, I've given up. 
 I now log my data using open hardware I can control myself, so I am archiving this git repo and no further updates will happen.
@@ -9,18 +9,18 @@ I now log my data using open hardware I can control myself, so I am archiving th
 
 
 
-===
-UPDATE: I have now added a second script called ethersun, this script controls a t-rex ethereum miner on a remote computer 
+
+### Mining script addition
+
+I have now added a second script called ethersun, this script controls a t-rex ethereum miner on a remote computer 
 The principle is to run the script in a cron, and it will mine ethereum when there is free (excess) power reported. 
 It can be adapted to use on other miners that have an API. 
 
 To use it with t-rex you should start the miner (it can be paused) and set it to listen on either all IPs or a non-loopback IP 
 The default is to start the API on 127.0.0.1 which wont work so add the flag --api-bind-http 0.0.0.0:4067 
 
-===
 
-
-The original project: 
+### The original project: 
 
 
 This project scrapes data from the live.myimmersun.com website which owners of immersun units 
