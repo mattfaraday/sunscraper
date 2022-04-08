@@ -3,7 +3,7 @@
 
 ## 2022- UNMAINTAINED!
 
-Since my brige / online service basically keep breaking and I keep having to log tickets, I've given up. 
+Since my hardware bridge / online service basically keep breaking and I keep having to log tickets to get it to work again, I've given up. 
 I now log my data using open hardware I can control myself, so I am archiving this git repo and no further updates will happen.
 
 
